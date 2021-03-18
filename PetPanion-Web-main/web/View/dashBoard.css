@@ -1,0 +1,150 @@
+@import "palette.css";
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.main{
+    /*margin-left: 160px; /* Same as the width of the sidenav */
+    /*font-size: 28px; /* Increased text to enable scrolling */
+    /*padding: 0px 10px;*/
+    width: 90vw;
+    margin: 0 auto;
+    padding: 30px 20px;
+    min-height:calc(100vh - 126px - 80px);
+}
+
+
+#navColor{
+   background-color: var(--color3);
+}
+.navButton{
+    color: var(--color1);
+    font-family: 'Courier New', Courier, monospace;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    display: block;
+    padding: .5rem 1rem;
+}
+.navButton:hover{
+    color: var(--color2);
+}
+
+#petPhoto{
+    padding-top: 20px;
+    height: 200px;
+}
+
+#petBio{
+    text-align: center;
+    padding: 20px 20px;
+
+}
+
+#footer {
+    z-index: 3;
+    position: sticky;
+    padding: 20px;
+    background: var(--color4);
+    color: var(--color1);
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.dashSide{
+  height: 100vh;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 126px;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.dashSide a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+
+.dashSide a:hover {
+    color: #f1f1f1;
+  }
+
+.rightDashSide{
+    height: 100vh;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 126px;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+.rightDashSide a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+    }
+  
+.rightDashSide a:hover {
+      color: #f1f1f1;
+    }
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+#leftImg{
+    max-width: 65%;
+    max-height: 85%;
+    padding-right: 5px;
+}
+
+#logo{
+    width: 150px;
+    height: 100px; 
+    float: left;
+
+}
+
+#motto{
+    text-align: center;
+    color: var(--color1);
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 10px;
+}
+
+#calendarCon{
+    padding: 90px;
+    height: 90vh;
+    margin-left: 500px;
+    width: 90vh;
+}
+
+#formCon{
+    padding: 90px;
+    height: 90vh;
+    margin-left: 500px;
+    width: 90vh;
+}
+
+
+#formCon2{
+    padding: 90px;
+    height: 90vh;
+    margin-left: 500px;
+    width: 90vh;
+}

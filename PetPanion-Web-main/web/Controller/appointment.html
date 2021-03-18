@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Book an Appointment!
+        </title>
+        <link rel="stylesheet" href="../View/dashBoard.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="../View/signup.css">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </head>
+    <nav class="navbar  sticky-top navbar-expand-lg navbar-light" id="navColor">
+        <a class="navbar-brand" href="../Model/landing.php">
+          <img src="../images/petpanion-logo.png" id="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <h2 id="motto">Schedule an Appointment</h2>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+               <a  class="navButton" href="../Controller/dashBoard.php">Return to Dashboard</a>
+              </li>
+          </ul>
+        </div>
+    </nav>
+    <body>
+      <!--columns within the main content-->
+      <main>  
+        <div class="dashSide">
+        </div>
+
+        <div id="formCon">
+        
+       
+            
+     
+     <hr>
+     <form id="regForm" action="../Model/makeAppointment.php" method="POST" >
+  <h1>Register</h1>
+  <!-- One "tab" for each step in the form: -->
+  <div class="tab">
+  
+    <p>Select a Pet:<?php include('../Model/petOptions.php')?><p>
+    <p><input placeholder="Notes" oninput="this.className = ''" name="desc" type="text"></p>
+  </div>
+  <div class="tab">
+    <p><input placeholder="Start Date" oninput="this.className = ''" name="start" type="date"></p>
+    <p><input placeholder="End Date" oninput="this.className = ''" name="end" type="date"></p>
+  </div>
+  <div class="tab">
+  <input type="radio" id="home" name="sleep" value="0">
+  <label for="home">Pet will be at home</label><br>
+  <input type="radio" id="away" name="sleep" value="1">
+  <label for="away">Pet is sleeping over</label><br>
+  </div>
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+
+  </div>
+</form>
+     
+     <hr>
+    
+        </div>
+
+        <div class="rightDashSide">
+        </div>
+
+      </main>
+
+      <footer id="footer">
+        &copy; PetPanion. All rights reserved.
+      </footer>
+<script src="../Controller/signup.js"></script>
+    </body>
+
+
+</html>

@@ -1,0 +1,219 @@
+@import "palette.css";
+
+.pageCenter {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  float: none;
+  
+}
+
+.hContainer {
+  padding-left: 75;
+  text-align: center;
+}
+
+.hContainer img {
+  display: block;
+  margin:auto;
+  width: 70%;
+}
+
+
+hr{
+  background-color: var(--color1);
+}
+
+#holderLOGO
+{
+  position: absolute;
+  width: 25%;
+  height: 25%;
+}
+
+.logo
+{
+width:120px;
+height:120px;
+}
+
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+
+
+.main-head{
+    height: 150px;
+    background: #FFF;
+   
+}
+
+
+
+.austinsidenav
+{
+    width:20%;
+    height: 100%;
+    background-color: var(--color3);
+    overflow-x: hidden;
+    padding-top: 20px;
+
+}
+
+@media screen and (max-height: 450px) {
+    .austinsidenav {padding-top: 15px;}
+}
+
+
+.sidenav {
+    width:30%;
+    height: 100%;
+    background-color: var(--color3);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+.main {
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: auto;
+    }
+
+    .register-form{
+        margin-top: auto;
+    }
+}
+
+@media screen and (min-width: 500px){
+    .main{
+        margin-left: 20%; 
+    }
+
+    .sidenav{
+        width: 30%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: auto;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+}
+
+
+.login-main-text{
+    font-size: large;
+    margin-top: 20%;
+    padding: 60px;
+    color: var(--color1);
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.btn-black{
+    background-color: #000 !important;
+    color: #fff;
+}
+
+/*Form styling*/
+ /* Style the form */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+h1 {
+  text-align: center;  
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: var(--color5);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: var(--color1);
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: var(--color3);
+}
+
+
+
+
+

@@ -1,0 +1,86 @@
+@import "palette.css"; /* Using a string */
+
+
+
+
+
+/*inner text div*/
+.thumbtext{
+   
+    background-color: var(--color3);
+    border-radius: 5px;
+    top:20%;
+    left:8%;
+    position: absolute;
+    padding:25px;
+}
+
+
+/*changes default BootStrap thumbnail posistion to relative*/
+.thumbnail{
+    position:relative;
+    
+}  
+
+
+.roundBox
+{
+ border-radius: 5px;
+ margin-top: 1%;
+}
+
+
+.enforce
+{
+
+}
+
+
+
+
+
+/* Set black background color, white text and some padding */
+footer{
+  position: relative;
+  width: 100%;
+  background-color: var(--color4);
+  color: var(--color5);
+  padding: 15px;
+  text-align: center;
+  margin-top: auto;
+
+}
+
+
+body{ background-color: var(--color2);
+}
+
+.thick
+{
+
+height:250px;
+
+}
+
+
+.noMargins
+{
+margin:0px;
+padding:0px;
+
+}
+
+.card
+{
+background-color:var(--color5);
+margin: 50px 0px 50px 0px; 
+}
+
+.logo
+{
+width:120px;
+height:120px;
+}
+
+
+

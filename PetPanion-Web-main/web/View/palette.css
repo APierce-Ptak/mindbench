@@ -1,0 +1,21 @@
+:root
+{
+  --color1:#FF6978;
+  --color2:#F8F9FA;
+  --color3:#cb4f0e;
+  --color4:#EDEDED;
+  --color5:#352D39; 
+}
+/*
+pink
+white   background, taskbar
+lightblue
+grey   footer
+dark purple    footerText
+
+ to reference global colors use var(--varname)
+ 
+ EXAMPLE: background:var(--color1) 
+   VERSUS background:#ffffff
+cb4f0e
+*/
